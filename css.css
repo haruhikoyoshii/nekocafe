@@ -1,0 +1,175 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+}
+.waku{
+	max-width:980px;
+	padding: 0 30 px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.ue{
+	height:56px;
+	width:100%;
+	box-shadow:0 0 10px #dddddd;
+	background-color:#fff;
+	position:fixed;
+	top:0;
+} 
+.ue-hidari{
+	float:left;
+}
+.ue-migi{
+	float:right;
+}
+.ue-migi a{
+	line-height:56px;
+	color:#5a5c5f;
+	margin-left:5px;
+	font-size:16px;
+	padding:16px 5px;
+}
+.ue-migi a hover{
+	background-color:#e2f1ff;
+	trasition:background-color 0.5s;
+}
+.logo{
+	height:40px;
+	margin-top:8px;
+}
+.cls{
+	clear:both;
+}
+.naka1{
+	padding-top:140px;
+	padding-bottom:100px;
+	background-image:url(./img/kyoto.jpg);
+	background-size:cover;
+	color:#5a5c5f;
+	text-align:center;
+}
+.syudai{
+	font-size:64px;
+	margin-bottom:10px
+}
+.fukudai{
+	font-size:24px;
+	margin-bottom:60px;
+}
+.naka2{
+	padding:80px 0;
+	color:#5a5c5f;
+	text-align:center;
+}
+.naka2 h2{
+	margin-bottom:25px;
+}
+.naka2 h3{
+	margin-bottom:10px;
+}
+.naka2 img{
+	width:450px;margin-bottom:25px;
+	box-shadow:2px 2px 4px #b7b7b7;border-radius:5px;
+}
+.sita{
+	height:120px;background-color:#2F3a44;
+	color:#e8e8e8;padding-top:20px;
+}
+.footer-hidari{
+	float:left;padding-top:50px;
+}
+.footer-migi{
+	float:right;padding-top:50px;
+}
+.footer-hidari p{margin-bottom:8px;}
+
+/*nekolist*/
+.waku3{padding:80px 0;color:#5a5c5f;}
+.ueobi{background-color:#e7e7eb;padding-bottom:50px;}
+.ueobi h1{padding:30px 0 0 50px}
+.ueobi ol{
+	margin-left:50px;
+	list-style-type:none;display:flex;
+}
+.ueobi li::after{content:">";margin:0 10px;}
+.ueobi li:last-child::after{content:none;}
+/*------*/
+.page p{line-height :2em;
+margin:50px 0 0 50px;}
+.nekoprof{display:flex;}
+.nekoprof img{display:flex;
+width:350px;}
+.nekoprof dl{margin:30px 0 0 50px;
+font-size:18px;width:450px;}
+.nekoprof dl dt{float:left;clear:both;
+padding:10px 0;color:#998484;}
+.nekoprof dl dd{border-bottom:solid
+1px #ccc;
+margin:0;padding:10px 0 10px 25%;}
+.menu{
+	padding:90px 0 60px;
+	color:#5a5c5f;
+}
+.menu-card{
+	width:33%;
+	margin-top:35px;
+}
+.menu-card-inner{
+	padding:25px 30px;
+	background-color:#dbe0e4;
+	border-radius:7px;
+	box-shadow:1px 1px 4px #d2d4d6;
+	text-align:center;
+	margin:0 20px;
+}
+.menu-img{
+	width:100%;
+	margin-bottom:20px;
+	border-radius:5px;
+}
+.menu-title{
+	margin-bottom:8px;
+}
+.menu-text{
+	font-size:14px;
+}
+.card{
+	display:flex;
+}
+.menu-card-wrapper{
+	margin:20px 0;
+	display:flex;
+	flex-wrap:wrap;
+}
+.container h2{
+	border-bottom:solid 3px #d2d4d6;
+	margin-left: 20px;
+	margin-top:40px;
+}
+.menuList{
+	margin-left:50px;padding:70px 0 0 0;
+	border-bottom:solid 1px #ccc;
+}
+.syozai{
+	width:800px;margin:30px auto;
+}
+table{
+	border-collapse:collapse;
+	border:none;
+	border-spacing:0;
+	margin:30px auto;
+	width:800px;
+}
+
+th,td{
+	vertical-align:top;
+	border:solid 1px #ccc;
+	padding:10px;
+}
+th{background-color:#e7e7eb;}
+
+.color{
+	color:red;
+}
+

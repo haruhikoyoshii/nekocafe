@@ -1,0 +1,66 @@
+!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>お問い合わせ ｜ 京の猫cafe</title>
+	<link rel="stylesheet" href="css.css">
+	<script>
+	function kazu1(){
+		var kyou=new Date();
+		var name=document.getElementById("name").value;
+		var kana=document.getElementById("kana").value;
+		var addres=document.getElementById("addres").value;
+		var question=document.getElementById("question").value;
+alert(kyou.getFullYear()+"年"+(kyou.getMonth()+1)+"月"+(kyou.getDate()+1)+"日\n"+name+"様\n読み："+kana+"\nE-mail："+addres+"\nお問い合わせ内容："+question);
+
+
+
+	}
+	
+	</script>
+</head>
+
+<body>
+<header>
+	<div class="ue">
+		<div class="waku">
+			<div class="ue-hidari">
+				<img class="logo" src="img/logo.png"
+				alt="京の猫cafe">
+			</div>
+			<div class="ue-migi">
+				<a href="index.html">トップ</a>
+				<a href="menu.html">メニュー</a>
+				<a href="nekolist.html">人気の猫</a>
+				<a href="access.html">アクセス</a>
+				<a href="otoiawase.html">お問い合わせ</a>
+			</div>
+			<div class="cls">
+			</div>
+		</div><!--waku-->
+	</div><!--ue-->
+</header>
+
+<section>
+<div class="waku3">
+ <div class="waku">
+  <div class="ueobi">
+   <h1>お問い合わせ</h1>
+   <ol>
+	<li><a href="index.html">ホーム</a></li>
+	<li><a href="otoiawase.html">お問い合わせ</a></li>
+   </ol>
+  </div><!--ueobi-->
+  <div class="page">
+  
+  <h2 class="menuList">お問い合わせフォーム</h2>
+  <p><span class="color">※</span>は必ず入力が必要な項目です。</p> 
+  <table>
+  <tr><th>お名前<span class="color">※</span></th><td><input type = "text" id = "name" /></td></tr>
+  <tr><th>ふりなが<span class="color">※</span></th><td><input type = "text" id = "kana" /></td></tr>
+  <tr><th>メールアドレス<span class="color">※</span></th><td><input type = "email" id = "addres" placeholder="sample@test.com" /></tr>
+  <tr><th>お問い合わせ<br>/ご質問内容</th><td><textarea rows="7" cols="55" id = "question" ></textarea></td></tr>
+  </table>
+  <button type = "button" onclick = "kazu1()" >確認する</button>
+  </body>
+  </html>

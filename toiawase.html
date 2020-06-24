@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script>
+//Mathオブジェクト
+var ritu=Math.PI
+console.log(ritu);
+console.log(Math.ceil(ritu));//小数点以下切り上げ
+console.log(Math.floor(ritu));//小数点以下切り捨て
+console.log(Math.round(ritu));//小数点以下四捨五入
+console.log(Math.round(ritu*100)/100);//小数点以下四捨五入
+function ranKazu(){
+	var ransuu=Math.random();
+	alert(Math.round(ransuu*4));//０～４までの乱数を生成する
+}
+
+//Dateオブジェクト
+var kyou=new Date();//今の日付を取得する
+console.log(kyou);
+console.log(kyou.getFullYear()+"年");
+console.log(kyou.getMonth()+1+"月");
+console.log(kyou.getDate()+1+"日");
+var youbi=["日","月","火","水","木","金","土"];
+console.log(youbi[kyou.getDay()]+"曜日");
+
+function nitikei(){
+	var nen=document.getElementById("nen").value;
+	var tuki=document.getElementById("tuki").value;
+	var hi=document.getElementById("hi").value;
+	
+	var hiduke1=new Date(nen,tuki-1,hi);
+	var sa=hiduke1-kyou;//ミリ秒で差が計算される
+	//1秒＝１０００ミリ秒
+	sa=Math.ceil(sa/(24*60*60*1000));
+	var hiduke2=nen+"年"+tuki+"月"+hi+"日";
+	if(sa<0){
+		sa=sa*-1;
+		alert(hiduke2+"は今日より"+sa+"日前");
+	}else if(sa>=1){
+		alert(hiduke2+"は今日から"+sa+"日後");
+	}else{
+		alert(hiduke2+"は今日");
+	}
+}
+function kazu1(){
+		var kazu1 =document.getElementById("kazu").value;
+	if((kazu1*1)%2===0){
+		alert("偶数です");
+	}else if(kazu1*1%2===1){
+		alert("奇数です");
+	}else{
+		alert("数字を入力してください");
+			
+		}
+	}
+
+	</script>
+</head>
+<body>
+<h2>本日のお題：組み込みオブジェクトとクリックイベント</h2>
+<h3>日数を計算する</h3>
+<input type = "text" id = "nen">
+<input type = "text" id = "tuki">
+<input type = "text" id = "hi"><br>
+<button type = "button" onclick = "nitikei()" >日数計算</button><br>
+<input type = "text" id = "kazu"><br>
+<button type = "button" onclick = "kazu1()" >奇数偶数判定</button>
+</body>
+</html>
